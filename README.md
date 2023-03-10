@@ -14,12 +14,14 @@ You must have Raspberry pi pico C/C++ sdk setup and pyusb library installed on y
 ### Building the demo
 ```
 git clone https://github.com/shekhuverma/Pyusb-RP-PICO.git
-cd Pyusb-RP-PICO/build
+cd Pyusb-RP-PICO/device
+mkdir build
+cd build
 cmake ..
 make -j4
 ```
 ## Usage
-Now you will have a Pyusb-RP-PICO.uf2 file in the build folder. You upload this file to your pi pico and run _host.py_
+Now you will have a RP_PICO_USB.uf2 file in the build folder. You upload this file to your pi pico and run _host.py_
 
 You will be able to see On Board LED blinking on the pico and when you will press the button on pico it will act as "a" key being pressed on your keyboard (You can see this by opening any text editor or browser)
 
